@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 16
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamVR", "SteamVR.csproj", "{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{04267E43-AE79-4347-089B-5B7643209243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamVR", "SteamVR.csproj", "{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamVR_Actions", "SteamVR_Actions.csproj", "{0AB5CBFE-5DDE-3AC9-594B-D386DEC07138}"
 EndProject
@@ -21,14 +21,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{04267E43-AE79-4347-089B-5B7643209243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{04267E43-AE79-4347-089B-5B7643209243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04267E43-AE79-4347-089B-5B7643209243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04267E43-AE79-4347-089B-5B7643209243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6D4BF3-2F4E-DFA4-EF25-D5D5B987D5C1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0AB5CBFE-5DDE-3AC9-594B-D386DEC07138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0AB5CBFE-5DDE-3AC9-594B-D386DEC07138}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AB5CBFE-5DDE-3AC9-594B-D386DEC07138}.Release|Any CPU.ActiveCfg = Release|Any CPU

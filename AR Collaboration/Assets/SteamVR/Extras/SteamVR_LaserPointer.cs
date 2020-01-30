@@ -24,6 +24,11 @@ namespace Valve.VR.Extras
         public event PointerEventHandler PointerOut;
         public event PointerEventHandler PointerClick;
 
+        // ARC Added Stuff
+        public SteamVR_Action_Boolean LaserOnOff;
+        public SteamVR_Input_Sources handType;
+
+
         Transform previousContact = null;
 
 
@@ -68,6 +73,26 @@ namespace Valve.VR.Extras
             Material newMaterial = new Material(Shader.Find("Unlit/Color"));
             newMaterial.SetColor("_Color", color);
             pointer.GetComponent<MeshRenderer>().material = newMaterial;
+
+            // ARC
+            LaserOnOff.AddOnStateDownListener(TriggerDown, handType);
+            LaserOnOff.AddOnStateUpListener(TriggerUp, handType);
+
+        }
+
+        //ARC
+        public void TriggerUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
+        {
+            Debug.Log("Laser Trigger is up");
+            isActive = true;
+            this.transform.GetChild(0).gameObject.SetActive(true);
+        }
+        // ARC
+        public void TriggerDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
+        {
+            Debug.Log("Laser Trigger is down");
+            isActive = false;
+            this.transform.GetChild(0).gameObject.SetActive(false);
         }
 
         public virtual void OnPointerIn(PointerEventArgs e)
@@ -93,8 +118,9 @@ namespace Valve.VR.Extras
         {
             if (!isActive)
             {
-                isActive = true;
-                this.transform.GetChild(0).gameObject.SetActive(true);
+                //isActive = true;
+                //this.transform.GetChild(0).gameObject.SetActive(true);
+                return;
             }
 
             float dist = 100f;

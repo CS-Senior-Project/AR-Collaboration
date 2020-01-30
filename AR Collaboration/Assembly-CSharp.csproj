@@ -63,8 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlaceCube.cs" />
-    <Compile Include="Assets\ViveInput.cs" />
+    <Compile Include="Assets\ControllerInput.cs" />
+    <Compile Include="Assets\MyActionScript.cs" />
     <Compile Include="Assets\ZED\Examples\Dark Room\Scripts\DisableUntilZEDReady.cs" />
     <Compile Include="Assets\ZED\Examples\Dark Room\Scripts\LightShow.cs" />
     <Compile Include="Assets\ZED\Examples\Dark Room\Scripts\PitchOscillator.cs" />

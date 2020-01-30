@@ -17,140 +17,68 @@ namespace Valve.VR
     public partial class SteamVR_Actions
     {
         
-        private static SteamVR_Action_Boolean p_zed_default_Grab;
+        private static SteamVR_Action_Boolean p_arc_actionset_trigger;
         
-        private static SteamVR_Action_Pose p_zed_default_Pose;
+        private static SteamVR_Action_Boolean p_arc_actionset_grip;
         
-        private static SteamVR_Action_Vector2 p_zed_default_NavigateUI;
+        private static SteamVR_Action_Boolean p_arc_actionset_menu;
         
-        private static SteamVR_Action_Boolean p_zed_default_Click;
-        
-        private static SteamVR_Action_Boolean p_zed_default_Back;
-        
-        private static SteamVR_Action_Boolean p_zed_default_Fire;
-        
-        private static SteamVR_Action_Vibration p_zed_default_Haptic;
-        
-        private static SteamVR_Action_Pose p_mixedreality_ExternalCamera;
-        
-        public static SteamVR_Action_Boolean zed_default_Grab
+        public static SteamVR_Action_Boolean arc_actionset_trigger
         {
             get
             {
-                return SteamVR_Actions.p_zed_default_Grab.GetCopy<SteamVR_Action_Boolean>();
+                return SteamVR_Actions.p_arc_actionset_trigger.GetCopy<SteamVR_Action_Boolean>();
             }
         }
         
-        public static SteamVR_Action_Pose zed_default_Pose
+        public static SteamVR_Action_Boolean arc_actionset_grip
         {
             get
             {
-                return SteamVR_Actions.p_zed_default_Pose.GetCopy<SteamVR_Action_Pose>();
+                return SteamVR_Actions.p_arc_actionset_grip.GetCopy<SteamVR_Action_Boolean>();
             }
         }
         
-        public static SteamVR_Action_Vector2 zed_default_NavigateUI
+        public static SteamVR_Action_Boolean arc_actionset_menu
         {
             get
             {
-                return SteamVR_Actions.p_zed_default_NavigateUI.GetCopy<SteamVR_Action_Vector2>();
-            }
-        }
-        
-        public static SteamVR_Action_Boolean zed_default_Click
-        {
-            get
-            {
-                return SteamVR_Actions.p_zed_default_Click.GetCopy<SteamVR_Action_Boolean>();
-            }
-        }
-        
-        public static SteamVR_Action_Boolean zed_default_Back
-        {
-            get
-            {
-                return SteamVR_Actions.p_zed_default_Back.GetCopy<SteamVR_Action_Boolean>();
-            }
-        }
-        
-        public static SteamVR_Action_Boolean zed_default_Fire
-        {
-            get
-            {
-                return SteamVR_Actions.p_zed_default_Fire.GetCopy<SteamVR_Action_Boolean>();
-            }
-        }
-        
-        public static SteamVR_Action_Vibration zed_default_Haptic
-        {
-            get
-            {
-                return SteamVR_Actions.p_zed_default_Haptic.GetCopy<SteamVR_Action_Vibration>();
-            }
-        }
-        
-        public static SteamVR_Action_Pose mixedreality_ExternalCamera
-        {
-            get
-            {
-                return SteamVR_Actions.p_mixedreality_ExternalCamera.GetCopy<SteamVR_Action_Pose>();
+                return SteamVR_Actions.p_arc_actionset_menu.GetCopy<SteamVR_Action_Boolean>();
             }
         }
         
         private static void InitializeActionArrays()
         {
             Valve.VR.SteamVR_Input.actions = new Valve.VR.SteamVR_Action[] {
-                    SteamVR_Actions.zed_default_Grab,
-                    SteamVR_Actions.zed_default_Pose,
-                    SteamVR_Actions.zed_default_NavigateUI,
-                    SteamVR_Actions.zed_default_Click,
-                    SteamVR_Actions.zed_default_Back,
-                    SteamVR_Actions.zed_default_Fire,
-                    SteamVR_Actions.zed_default_Haptic,
-                    SteamVR_Actions.mixedreality_ExternalCamera};
+                    SteamVR_Actions.arc_actionset_trigger,
+                    SteamVR_Actions.arc_actionset_grip,
+                    SteamVR_Actions.arc_actionset_menu};
             Valve.VR.SteamVR_Input.actionsIn = new Valve.VR.ISteamVR_Action_In[] {
-                    SteamVR_Actions.zed_default_Grab,
-                    SteamVR_Actions.zed_default_Pose,
-                    SteamVR_Actions.zed_default_NavigateUI,
-                    SteamVR_Actions.zed_default_Click,
-                    SteamVR_Actions.zed_default_Back,
-                    SteamVR_Actions.zed_default_Fire,
-                    SteamVR_Actions.mixedreality_ExternalCamera};
-            Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.ISteamVR_Action_Out[] {
-                    SteamVR_Actions.zed_default_Haptic};
-            Valve.VR.SteamVR_Input.actionsVibration = new Valve.VR.SteamVR_Action_Vibration[] {
-                    SteamVR_Actions.zed_default_Haptic};
-            Valve.VR.SteamVR_Input.actionsPose = new Valve.VR.SteamVR_Action_Pose[] {
-                    SteamVR_Actions.zed_default_Pose,
-                    SteamVR_Actions.mixedreality_ExternalCamera};
+                    SteamVR_Actions.arc_actionset_trigger,
+                    SteamVR_Actions.arc_actionset_grip,
+                    SteamVR_Actions.arc_actionset_menu};
+            Valve.VR.SteamVR_Input.actionsOut = new Valve.VR.ISteamVR_Action_Out[0];
+            Valve.VR.SteamVR_Input.actionsVibration = new Valve.VR.SteamVR_Action_Vibration[0];
+            Valve.VR.SteamVR_Input.actionsPose = new Valve.VR.SteamVR_Action_Pose[0];
             Valve.VR.SteamVR_Input.actionsBoolean = new Valve.VR.SteamVR_Action_Boolean[] {
-                    SteamVR_Actions.zed_default_Grab,
-                    SteamVR_Actions.zed_default_Click,
-                    SteamVR_Actions.zed_default_Back,
-                    SteamVR_Actions.zed_default_Fire};
+                    SteamVR_Actions.arc_actionset_trigger,
+                    SteamVR_Actions.arc_actionset_grip,
+                    SteamVR_Actions.arc_actionset_menu};
             Valve.VR.SteamVR_Input.actionsSingle = new Valve.VR.SteamVR_Action_Single[0];
-            Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[] {
-                    SteamVR_Actions.zed_default_NavigateUI};
+            Valve.VR.SteamVR_Input.actionsVector2 = new Valve.VR.SteamVR_Action_Vector2[0];
             Valve.VR.SteamVR_Input.actionsVector3 = new Valve.VR.SteamVR_Action_Vector3[0];
             Valve.VR.SteamVR_Input.actionsSkeleton = new Valve.VR.SteamVR_Action_Skeleton[0];
             Valve.VR.SteamVR_Input.actionsNonPoseNonSkeletonIn = new Valve.VR.ISteamVR_Action_In[] {
-                    SteamVR_Actions.zed_default_Grab,
-                    SteamVR_Actions.zed_default_NavigateUI,
-                    SteamVR_Actions.zed_default_Click,
-                    SteamVR_Actions.zed_default_Back,
-                    SteamVR_Actions.zed_default_Fire};
+                    SteamVR_Actions.arc_actionset_trigger,
+                    SteamVR_Actions.arc_actionset_grip,
+                    SteamVR_Actions.arc_actionset_menu};
         }
         
         private static void PreInitActions()
         {
-            SteamVR_Actions.p_zed_default_Grab = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/zed-default/in/Grab")));
-            SteamVR_Actions.p_zed_default_Pose = ((SteamVR_Action_Pose)(SteamVR_Action.Create<SteamVR_Action_Pose>("/actions/zed-default/in/Pose")));
-            SteamVR_Actions.p_zed_default_NavigateUI = ((SteamVR_Action_Vector2)(SteamVR_Action.Create<SteamVR_Action_Vector2>("/actions/zed-default/in/NavigateUI")));
-            SteamVR_Actions.p_zed_default_Click = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/zed-default/in/Click")));
-            SteamVR_Actions.p_zed_default_Back = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/zed-default/in/Back")));
-            SteamVR_Actions.p_zed_default_Fire = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/zed-default/in/Fire")));
-            SteamVR_Actions.p_zed_default_Haptic = ((SteamVR_Action_Vibration)(SteamVR_Action.Create<SteamVR_Action_Vibration>("/actions/zed-default/out/Haptic")));
-            SteamVR_Actions.p_mixedreality_ExternalCamera = ((SteamVR_Action_Pose)(SteamVR_Action.Create<SteamVR_Action_Pose>("/actions/mixedreality/in/ExternalCamera")));
+            SteamVR_Actions.p_arc_actionset_trigger = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/arc_actionset/in/trigger")));
+            SteamVR_Actions.p_arc_actionset_grip = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/arc_actionset/in/grip")));
+            SteamVR_Actions.p_arc_actionset_menu = ((SteamVR_Action_Boolean)(SteamVR_Action.Create<SteamVR_Action_Boolean>("/actions/arc_actionset/in/menu")));
         }
     }
 }

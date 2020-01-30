@@ -1,46 +1,21 @@
 {
   "actions": [
     {
-      "name": "/actions/zed-default/in/Grab",
+      "name": "/actions/arc_actionset/in/trigger",
       "type": "boolean"
     },
     {
-      "name": "/actions/zed-default/in/Pose",
-      "type": "pose"
-    },
-    {
-      "name": "/actions/zed-default/in/NavigateUI",
-      "type": "vector2"
-    },
-    {
-      "name": "/actions/zed-default/in/Click",
+      "name": "/actions/arc_actionset/in/grip",
       "type": "boolean"
     },
     {
-      "name": "/actions/zed-default/in/Back",
+      "name": "/actions/arc_actionset/in/menu",
       "type": "boolean"
-    },
-    {
-      "name": "/actions/zed-default/in/Fire",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/zed-default/out/Haptic",
-      "type": "vibration"
-    },
-    {
-      "name": "/actions/mixedreality/in/ExternalCamera",
-      "type": "pose",
-      "requirement": "optional"
     }
   ],
   "action_sets": [
     {
-      "name": "/actions/zed-default",
-      "usage": "single"
-    },
-    {
-      "name": "/actions/mixedreality",
+      "name": "/actions/arc_actionset",
       "usage": "single"
     }
   ],
@@ -52,12 +27,7 @@
   ],
   "localization": [
     {
-      "language_tag": "en_US",
-      "/actions/zed-default/in/Back": "Back",
-      "/actions/zed-default/in/Click": "Click",
-      "/actions/zed-default/in/Fire": "Fire",
-      "/actions/zed-default/in/Grab": "Grab",
-      "/actions/zed-default/in/NavigateUI": "NavigateUI"
+      "language_tag": "en_US"
     }
   ]
 }
