@@ -1,0 +1,33 @@
+{
+  "actions": [
+    {
+      "name": "/actions/arc_actionset/in/trigger",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/arc_actionset/in/grip",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/arc_actionset/in/menu",
+      "type": "boolean"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/arc_actionset",
+      "usage": "single"
+    }
+  ],
+  "default_bindings": [
+    {
+      "controller_type": "vive_controller",
+      "binding_url": "application_generated_unity_arcollaboration_exe_binding_vive_controller.json"
+    }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_US"
+    }
+  ]
+}
