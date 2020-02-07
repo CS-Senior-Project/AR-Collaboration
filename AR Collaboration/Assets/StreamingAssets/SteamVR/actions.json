@@ -17,6 +17,10 @@
     {
       "name": "/actions/arc_actionset",
       "usage": "single"
+    },
+    {
+      "name": "/actions/NewSet",
+      "usage": "single"
     }
   ],
   "default_bindings": [

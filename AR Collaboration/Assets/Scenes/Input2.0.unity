@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionSet:
-    actionSetPath: /actions/default
+    actionSetPath: /actions/arc_actionset
   forSources: 0
   disableAllOtherActionSets: 0
   activateOnStart: 1
