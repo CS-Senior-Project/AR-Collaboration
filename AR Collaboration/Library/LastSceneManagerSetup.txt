@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/KeyboardInput.unity
+- path: Assets/Scenes/Keyboard_CP.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
