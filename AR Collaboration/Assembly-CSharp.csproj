@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ControllerInput.cs" />
     <Compile Include="Assets\Login.cs" />
     <Compile Include="Assets\MyActionScript.cs" />
     <Compile Include="Assets\NewLogin.cs" />
