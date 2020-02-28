@@ -1,62 +1,81 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+using System;
+using System.Text.RegularExpressions;
 
-public class Login : MonoBehaviour
-{
+public class Login : MonoBehaviour {
+	public GameObject username;
+	public GameObject password;
+	private string Username;
+	private string Password;
+	private String[] Lines;
+	private string DecryptedPass;
 
-    private string u = "username";
-    private string p = "password";
+	public void LoginButton(){
+		bool UN = false;
+		bool PW = false;
 
-    private string usernameString = string.Empty;
-    private string passwordString = string.Empty;
-
-    private Rect windowRect = new Rect(0, 0, Screen.width, Screen.height);
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-    void OnGUI()
-    {
-        GUI.Window(0, windowRect, WindowFunction, "Login");
-    }
-
-    void WindowFunction (int windowID)
-    {
-        // User input 
-        usernameString = GUI.TextField(new Rect(Screen.width/3, 2*Screen.height/5, Screen.width / 3, Screen.height / 10), usernameString, 10);
-        passwordString = GUI.PasswordField(new Rect(Screen.width/3, 2*Screen.height/3, Screen.width / 3, Screen.height / 10), passwordString, "*"[0] , 10);
-
-        if(GUI.Button(new Rect(Screen.width/2, 4*Screen.height/5, Screen.width/8, Screen.height/10), "Log-in"))
-        {
-            if (usernameString == u && passwordString == p)
-            {
-                Debug.Log("Welcome to the AR Collaboration App!");
-                GUI.Label(new Rect(100, 100, 400, 30), "Welcome to the AR Collaboration App!");
-            }
-            else { 
-                GUI.Label(new Rect(Screen.width/3, 45*Screen.height/100, Screen.width/6, Screen.height/6), "Wrong username or password!");
-                Debug.Log("Wrong username or password!");
-
-            }
-        }
-
-        GUI.Label(new Rect(Screen.width / 3, 35 * Screen.height / 100, Screen.width / 8, Screen.height / 8), "Username");
-        GUI.Label(new Rect(Screen.width / 3, 62 * Screen.height / 100, Screen.width / 8, Screen.height / 8), "Password");
+		if (Username != ""){
+			if(System.IO.File.Exists(@"E:/UnityTestFolder/"+Username+".txt")){
+				UN = true;
+				Lines = System.IO.File.ReadAllLines(@"E:/UnityTestFolder/"+Username+".txt");
+			} else {
+				Debug.LogWarning("Username Invaild");
+			}
+		} else {
+			Debug.LogWarning("Username Field Empty");
+		}
 
 
-    }
+		if (Password != ""){
+			if (System.IO.File.Exists(@"E:/UnityTestFolder/"+Username+".txt")){
 
+                // Get Salt
+                string salt = Lines[1];
+                //print("login salt: " + salt);
 
+                // Calculate Hash from user input password
+                byte[] bytes = System.Text.Encoding.UTF8.GetBytes(Password + salt);
+                System.Security.Cryptography.SHA256Managed sha256Hashed = new System.Security.Cryptography.SHA256Managed();
+                byte[] hashAll = sha256Hashed.ComputeHash(bytes);
+                string Comparehash = System.Text.Encoding.UTF8.GetString(hashAll, 0, hashAll.Length);
+                //print("login hash: " + Comparehash);
+
+                // Get Hash
+                string fileHash = Lines[2];
+
+                if (fileHash == Comparehash){
+					PW = true;
+				} else {
+					Debug.LogWarning("Password Is invalid");
+				}
+			} else {
+				Debug.LogWarning("Password Is invalid");
+			}
+		} else {
+			Debug.LogWarning("Password Field Empty");
+		}
+		if (UN == true&&PW == true){
+			username.GetComponent<InputField>().text = "";
+			password.GetComponent<InputField>().text = "";	
+			print ("Login Sucessful");
+			Application.LoadLevel("Input2.0");          // Change to Whatever Start Scene is
+		}
+	}
+	// Update is called once per frame
+	void Update () {
+		if (Input.GetKeyDown(KeyCode.Tab)){
+			if (username.GetComponent<InputField>().isFocused){
+				password.GetComponent<InputField>().Select();           // Allow for tab to next slot
+			}
+		}
+		if (Input.GetKeyDown(KeyCode.Return)){
+			if (Password != "" && Password != ""){
+				LoginButton();                                          // "Enter will press button
+			}
+		}
+		Username = username.GetComponent<InputField>().text;
+		Password = password.GetComponent<InputField>().text;	
+	}
 }

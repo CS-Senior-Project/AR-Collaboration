@@ -6,22 +6,16 @@ using System.Text.RegularExpressions;
 
 public class Register : MonoBehaviour {
 	public GameObject username;
-	//public GameObject email;
 	public GameObject password;
 	public GameObject confPassword;
 	private string Username;
-	//private string Email;
 	private string Password;
 	private string ConfPassword;
 	private string form;
-	//private bool EmailValid = false;
-	private string[] Characters = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
-								   "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",
-								   "1","2","3","4","5","6","7","8","9","0","_","-"};
+
 	
 	public void RegisterButton(){
 		bool UN = false;
-		//bool EM = false;
 		bool PW = false;
 		bool CPW = false;
 
@@ -36,35 +30,7 @@ public class Register : MonoBehaviour {
 		}
 
 
-		/*if (Email != ""){
-			EmailValidation();
-			if (EmailValid){
-				if(Email.Contains("@")){
-					if(Email.Contains(".")){
-						EM = true;
-					} else {
-						Debug.LogWarning("Email is Incorrect");
-					}
-				} else {
-					Debug.LogWarning("Email is Incorrect");
-				}
-			} else {
-				Debug.LogWarning("Email is Incorrect");
-			}
-		} else {
-			Debug.LogWarning("Email Field Empty");
-		}*/
-
-
-		if (Password != ""){
-			if(Password.Length > 5){
-				PW = true;
-			} else {
-				Debug.LogWarning("Password Must Be atleast 6 Characters long");
-			}
-		} else {
-			Debug.LogWarning("Password Field Empty");
-		}
+        PW = ValidatePassword(Password);
 
 
 		if (ConfPassword != ""){
@@ -77,24 +43,28 @@ public class Register : MonoBehaviour {
 			Debug.LogWarning("Confirm Password Field Empty");
 		}
 
-        //if (UN == true&&EM == true&&PW == true&&CPW == true){
+
 		if (UN == true&&PW == true&&CPW == true){
-			bool Clear = true;
-			int i = 1;
-			foreach(char c in Password){
-				if (Clear){
-					Password = "";
-					Clear = false;
-				}
-				i++;
-				char Encrypted = (char)(c * i);
-				Password += Encrypted.ToString();
-			}
-			form = (Username+Environment.NewLine+Password);
-            //form = (Username + Environment.NewLine + Email + Environment.NewLine + Password);
+
+            // Create Salt
+            int size = 10;
+            var range = new System.Security.Cryptography.RNGCryptoServiceProvider();
+            var buffer = new byte[size];
+            range.GetBytes(buffer);
+            string salt = Convert.ToBase64String(buffer);
+            //print("salt = " + salt);
+
+            //Create Hash
+            byte[] bytes = System.Text.Encoding.UTF8.GetBytes(Password + salt);
+            System.Security.Cryptography.SHA256Managed sha256Hashed = new System.Security.Cryptography.SHA256Managed();
+            byte[] hashAll = sha256Hashed.ComputeHash(bytes);
+            string hash = System.Text.Encoding.UTF8.GetString(hashAll, 0, hashAll.Length);
+            //print("hash = " + hash);
+
+
+			form = (Username + Environment.NewLine + salt + Environment.NewLine + hash);
             System.IO.File.WriteAllText(@"E:/UnityTestFolder/"+Username+".txt", form);
 			username.GetComponent<InputField>().text = "";
-			//email.GetComponent<InputField>().text = "";
 			password.GetComponent<InputField>().text = "";
 			confPassword.GetComponent<InputField>().text = "";
 			print ("Registration Complete");
@@ -106,46 +76,70 @@ public class Register : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Tab)){
 			if (username.GetComponent<InputField>().isFocused){
-				//email.GetComponent<InputField>().Select();
                 password.GetComponent<InputField>().Select();
             }
-			/*if (email.GetComponent<InputField>().isFocused){
-				password.GetComponent<InputField>().Select();
-			}*/
 			if (password.GetComponent<InputField>().isFocused){
 				confPassword.GetComponent<InputField>().Select();
 			}
 		}
 		if (Input.GetKeyDown(KeyCode.Return)){
-            //if (Password != ""&&Email != ""&&Password != ""&&ConfPassword != ""){
 			if (Password != ""&&Password != ""&&ConfPassword != ""){
 				RegisterButton();
 			}
 		}
 		Username = username.GetComponent<InputField>().text;
-		//Email = email.GetComponent<InputField>().text;
 		Password = password.GetComponent<InputField>().text;
 		ConfPassword = confPassword.GetComponent<InputField>().text;
 	}
 
-/*	void EmailValidation(){
-		bool SW = false;
-		bool EW = false;
-		for(int i = 0;i<Characters.Length;i++){
-			if (Email.StartsWith(Characters[i])){
-				SW = true;
-			}
-		}
-		for(int i = 0;i<Characters.Length;i++){
-			if (Email.EndsWith(Characters[i])){
-				EW = true;
-			}
-		}
-		if(SW == true&&EW == true){
-			EmailValid = true;
-		} else {
-			EmailValid = false;
-		}
 
-	}*/
+    private bool ValidatePassword(string password)
+    {
+        var input = password;
+
+        if (string.IsNullOrWhiteSpace(input))
+        {
+            Debug.LogWarning("Password should not be empty");
+            return false;
+
+        } else {
+            var hasNumber = new Regex(@"[0-9]+");
+            var hasUpperChar = new Regex(@"[A-Z]+");
+            var hasMiniMaxChars = new Regex(@".{8,15}");
+            var hasLowerChar = new Regex(@"[a-z]+");
+            var hasSymbols = new Regex(@"[!@#$%^&*()_+=\[{\]};:<>|./?,-]");
+
+            if (!hasLowerChar.IsMatch(input))
+            {
+                Debug.LogWarning("Password should contain at least one lower case letter");
+                return false;
+            }
+            else if (!hasUpperChar.IsMatch(input))
+            {
+                Debug.LogWarning("Password should contain at least one upper case letter");
+                return false;
+            }
+            else if (!hasMiniMaxChars.IsMatch(input))
+            {
+                Debug.LogWarning("Password should not be less than 8 or greater than 15 characters");
+                return false;
+            }
+            else if (!hasNumber.IsMatch(input))
+            {
+                Debug.LogWarning("Password should contain at least one numerical value");
+                return false;
+            }
+
+            else if (!hasSymbols.IsMatch(input))
+            {
+                Debug.LogWarning("Password should contain at least one special case characters");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+    }
 }
