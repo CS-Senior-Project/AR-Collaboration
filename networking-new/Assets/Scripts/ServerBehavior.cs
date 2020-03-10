@@ -24,7 +24,7 @@ public class ServerBehavior : MonoBehaviour
         if (m_Driver.Bind(endpoint) != 0)
             Debug.Log("Failed to bind to port 9000");
         else {
-            ObjectDump.Write(Console.out, endpoint);
+            //ObjectDump.Write(Console.out, endpoint);
             Debug.Log("Endpoint22: " + NetworkEndPoint.AnyIpv4);
             m_Driver.Listen();
         }
