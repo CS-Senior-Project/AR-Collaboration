@@ -120,6 +120,26 @@ namespace Mirror
                 {
                     manager.StopHost();
                 }
+
+                if (GUILayout.Button("Mute"))
+                {
+                    AudioSource leftController = GameObject.FindGameObjectWithTag("leftController").GetComponent<AudioSource>();
+                    AudioSource rightController = GameObject.FindGameObjectWithTag("rightController").GetComponent<AudioSource>();
+
+                    leftController.volume = 0.0f;
+                    rightController.volume = 0.0f;
+                }
+                else
+                {
+                    if (GUILayout.Button("Unmute"))
+                    {
+                        AudioSource leftController = GameObject.FindGameObjectWithTag("leftController").GetComponent<AudioSource>();
+                        AudioSource rightController = GameObject.FindGameObjectWithTag("rightController").GetComponent<AudioSource>();
+
+                        leftController.volume = 1.0f;
+                        rightController.volume = 1.0f;
+                    }
+                }
             }
 
             GUILayout.EndArea();
