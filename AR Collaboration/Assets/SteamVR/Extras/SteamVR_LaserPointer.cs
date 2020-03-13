@@ -6,7 +6,7 @@ namespace Valve.VR.Extras
 {
     public class SteamVR_LaserPointer : MonoBehaviour
     {
-        public SteamVR_Behaviour_Pose pose;
+        //public SteamVR_Behaviour_Pose pose;
 
         //public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.__actions_default_in_InteractUI;
         public SteamVR_Action_Boolean interactWithUI = SteamVR_Input.GetBooleanAction("InteractUI");
@@ -34,10 +34,10 @@ namespace Valve.VR.Extras
 
         private void Start()
         {
-            if (pose == null)
+/*            if (pose == null)
                 pose = this.GetComponent<SteamVR_Behaviour_Pose>();
             if (pose == null)
-                Debug.LogError("No SteamVR_Behaviour_Pose component found on this object", this);
+                Debug.LogError("No SteamVR_Behaviour_Pose component found on this object", this);*/
 
             if (interactWithUI == null)
                 Debug.LogError("No ui interaction action has been set on this component.", this);
@@ -132,7 +132,7 @@ namespace Valve.VR.Extras
             if (previousContact && previousContact != hit.transform)
             {
                 PointerEventArgs args = new PointerEventArgs();
-                args.fromInputSource = pose.inputSource;
+                //args.fromInputSource = pose.inputSource;
                 args.distance = 0f;
                 args.flags = 0;
                 args.target = previousContact;
@@ -142,7 +142,7 @@ namespace Valve.VR.Extras
             if (bHit && previousContact != hit.transform)
             {
                 PointerEventArgs argsIn = new PointerEventArgs();
-                argsIn.fromInputSource = pose.inputSource;
+                //argsIn.fromInputSource = pose.inputSource;
                 argsIn.distance = hit.distance;
                 argsIn.flags = 0;
                 argsIn.target = hit.transform;
@@ -158,7 +158,7 @@ namespace Valve.VR.Extras
                 dist = hit.distance;
             }
 
-            if (bHit && interactWithUI.GetStateUp(pose.inputSource))
+/*            if (bHit && interactWithUI.GetStateUp(pose.inputSource))
             {
                 PointerEventArgs argsClick = new PointerEventArgs();
                 argsClick.fromInputSource = pose.inputSource;
@@ -166,9 +166,9 @@ namespace Valve.VR.Extras
                 argsClick.flags = 0;
                 argsClick.target = hit.transform;
                 OnPointerClick(argsClick);
-            }
+            }*/
 
-            if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))
+/*            if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))
             {
                 pointer.transform.localScale = new Vector3(thickness * 5f, thickness * 5f, dist);
                 pointer.GetComponent<MeshRenderer>().material.color = clickColor;
@@ -177,7 +177,7 @@ namespace Valve.VR.Extras
             {
                 pointer.transform.localScale = new Vector3(thickness, thickness, dist);
                 pointer.GetComponent<MeshRenderer>().material.color = color;
-            }
+            }*/
             pointer.transform.localPosition = new Vector3(0f, 0f, dist / 2f);
         }
     }

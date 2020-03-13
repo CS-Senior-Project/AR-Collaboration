@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 294106004}
   - component: {fileID: 294106003}
   m_Layer: 0
-  m_Name: Rigth Sphere
+  m_Name: Right Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -258,10 +258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f511c1adaa1e94ebe7ca97bbcabd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pose: {fileID: 0}
   interactWithUI:
-    actionPath: 
-    needsReinit: 1
+    actionPath: /actions/arc_actionset/in/menu
+    needsReinit: 0
   active: 1
   color: {r: 0, g: 1, b: 0, a: 0}
   thickness: 0.001
@@ -429,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 3
+  index: 4
   origin: {fileID: 0}
 --- !u!4 &337264860
 Transform:
@@ -550,10 +549,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f511c1adaa1e94ebe7ca97bbcabd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pose: {fileID: 0}
   interactWithUI:
-    actionPath: 
-    needsReinit: 1
+    actionPath: /actions/arc_actionset/in/menu
+    needsReinit: 0
   active: 0
   color: {r: 1, g: 0, b: 0, a: 0}
   thickness: 0.002
@@ -669,7 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 4
+  index: 3
   origin: {fileID: 0}
 --- !u!1 &1860321077
 GameObject:
