@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 294106005}
   - component: {fileID: 294106004}
   - component: {fileID: 294106003}
+  - component: {fileID: 294106007}
   m_Layer: 0
   m_Name: Right Sphere
   m_TagString: Untagged
@@ -258,9 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f511c1adaa1e94ebe7ca97bbcabd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactWithUI:
-    actionPath: /actions/arc_actionset/in/menu
-    needsReinit: 0
   active: 1
   color: {r: 0, g: 1, b: 0, a: 0}
   thickness: 0.001
@@ -332,6 +330,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294106001}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &294106007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294106001}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7ccbb9b45ec5f41a2a1f689925e7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 0
+  color: {r: 0, g: 1, b: 0, a: 1}
+  thickness: 0.002
+  clickColor: {r: 0.32163587, g: 0.6886792, b: 0, a: 1}
+  holder: {fileID: 0}
+  pointer: {fileID: 0}
+  addRigidBody: 0
+  reference: {fileID: 0}
+  LaserOnOff:
+    actionPath: /actions/arc_actionset/in/trigger
+    needsReinit: 0
+  handType: 2
 --- !u!1 &300940152
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 4
+  index: 3
   origin: {fileID: 0}
 --- !u!4 &337264860
 Transform:
@@ -549,9 +571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f511c1adaa1e94ebe7ca97bbcabd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactWithUI:
-    actionPath: /actions/arc_actionset/in/menu
-    needsReinit: 0
   active: 0
   color: {r: 1, g: 0, b: 0, a: 0}
   thickness: 0.002
@@ -667,7 +686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 3
+  index: 4
   origin: {fileID: 0}
 --- !u!1 &1860321077
 GameObject:
