@@ -1,0 +1,15 @@
+{
+  
+  "bindings": {
+    "/actions/zed-default": {
+      "chords": [],
+      "poses": [],
+      "haptics": [],
+      "sources": [],
+      "skeleton": []
+    }
+  },
+  "controller_type": "vive_controller",
+  "description": "",
+  "name": "default"
+}

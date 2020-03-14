@@ -37,9 +37,9 @@ namespace Valve.VR.Extras
 /*            if (pose == null)
                 pose = this.GetComponent<SteamVR_Behaviour_Pose>();
             if (pose == null)
-                Debug.LogError("No SteamVR_Behaviour_Pose component found on this object", this);*/
+                Debug.LogError("No SteamVR_Behaviour_Pose component found on this object", this);
 
-/*            if (interactWithUI == null)
+            if (interactWithUI == null)
                 Debug.LogError("No ui interaction action has been set on this component.", this);*/
 
 
@@ -158,7 +158,7 @@ namespace Valve.VR.Extras
                 dist = hit.distance;
             }
 
-/*            if (bHit && interactWithUI.GetStateUp(pose.inputSource))
+            /*if (bHit && interactWithUI.GetStateUp(pose.inputSource))
             {
                 PointerEventArgs argsClick = new PointerEventArgs();
                 argsClick.fromInputSource = pose.inputSource;
@@ -166,9 +166,9 @@ namespace Valve.VR.Extras
                 argsClick.flags = 0;
                 argsClick.target = hit.transform;
                 OnPointerClick(argsClick);
-            }*/
+            }
 
-/*            if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))
+            if (interactWithUI != null && interactWithUI.GetState(pose.inputSource))
             {
                 pointer.transform.localScale = new Vector3(thickness * 5f, thickness * 5f, dist);
                 pointer.GetComponent<MeshRenderer>().material.color = clickColor;
