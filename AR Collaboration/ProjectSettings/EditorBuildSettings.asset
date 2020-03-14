@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/KeyboardInput.unity
+    path: Assets/Scenes/Testing_Keyboard.unity
     guid: 2134818b21fbc3e43bb38ff6bd8e6945
   m_configObjects: {}
