@@ -12,8 +12,15 @@ public class Login : MonoBehaviour {
 	private String[] Lines;
 	private string DecryptedPass;
 
-	public void LoginButton(){
-		bool UN = false;
+    private Text errorMessage;
+    private Text successMessage;
+
+    public void LoginButton(){
+
+        errorMessage = GameObject.Find("ErrorMessage").GetComponent<Text>();
+        successMessage = GameObject.Find("SuccessMessage").GetComponent<Text>();
+
+        bool UN = false;
 		bool PW = false;
 
 		if (Username != ""){
@@ -22,10 +29,12 @@ public class Login : MonoBehaviour {
 				Lines = System.IO.File.ReadAllLines(@"E:/UnityTestFolder/"+Username+".txt");
 			} else {
 				Debug.LogWarning("Username Invaild");
-			}
+                errorMessage.text = "Username Invalid";
+            }
 		} else {
 			Debug.LogWarning("Username Field Empty");
-		}
+            errorMessage.text = "Username Field Empty";
+        }
 
 
 		if (Password != ""){
@@ -49,18 +58,23 @@ public class Login : MonoBehaviour {
 					PW = true;
 				} else {
 					Debug.LogWarning("Password Is invalid");
-				}
+                    errorMessage.text = "Password Is invalid";
+                }
 			} else {
 				Debug.LogWarning("Password Is invalid");
-			}
+                errorMessage.text = "Password Is invalid";
+            }
 		} else {
 			Debug.LogWarning("Password Field Empty");
-		}
+            errorMessage.text = "Password Field Empty";
+        }
 		if (UN == true&&PW == true){
 			username.GetComponent<InputField>().text = "";
 			password.GetComponent<InputField>().text = "";	
-			print ("Login Sucessful");
-			Application.LoadLevel("Input2.0");          // Change to Whatever Start Scene is
+			print ("Login Successful");
+            errorMessage.text = "";
+            successMessage.text = "Login Successful";
+            Application.LoadLevel("Input2.0");                          // TODO: Change to Whatever Start Scene is
 		}
 	}
 	// Update is called once per frame

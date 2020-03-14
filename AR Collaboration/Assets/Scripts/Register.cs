@@ -5,7 +5,7 @@ using System;
 using System.Text.RegularExpressions;
 
 public class Register : MonoBehaviour {
-	public GameObject username;
+    public GameObject username;
 	public GameObject password;
 	public GameObject confPassword;
 	private string Username;
@@ -13,9 +13,16 @@ public class Register : MonoBehaviour {
 	private string ConfPassword;
 	private string form;
 
-	
-	public void RegisterButton(){
-		bool UN = false;
+    private Text errorMessage;
+    private Text successMessage;
+   
+
+    public void RegisterButton(){
+
+        errorMessage = GameObject.Find("ErrorMessage").GetComponent<Text>();
+        successMessage = GameObject.Find("SuccessMessage").GetComponent<Text>();
+
+        bool UN = false;
 		bool PW = false;
 		bool CPW = false;
 
@@ -24,10 +31,12 @@ public class Register : MonoBehaviour {
 				UN = true;
 			} else {
 				Debug.LogWarning("Username Taken");
+                errorMessage.text = "Username Taken";
 			}
 		} else {
 			Debug.LogWarning("Username field Empty");
-		}
+            errorMessage.text = "Username field Empty";
+        }
 
 
         PW = ValidatePassword(Password);
@@ -38,10 +47,12 @@ public class Register : MonoBehaviour {
 				CPW = true;
 			} else {
 				Debug.LogWarning("Passwords Don't Match");
-			}
+                errorMessage.text = "Passwords Don't Match";
+            }
 		} else {
 			Debug.LogWarning("Confirm Password Field Empty");
-		}
+            errorMessage.text = "Confirm Password Field Empty";
+        }
 
 
 		if (UN == true&&PW == true&&CPW == true){
@@ -68,7 +79,10 @@ public class Register : MonoBehaviour {
 			password.GetComponent<InputField>().text = "";
 			confPassword.GetComponent<InputField>().text = "";
 			print ("Registration Complete");
-		}
+            errorMessage.text = "";
+            successMessage.text = "Registration Complete";
+
+        }
 
 	}
 	
@@ -100,6 +114,7 @@ public class Register : MonoBehaviour {
         if (string.IsNullOrWhiteSpace(input))
         {
             Debug.LogWarning("Password should not be empty");
+            errorMessage.text = "Password should not be empty";
             return false;
 
         } else {
@@ -112,27 +127,32 @@ public class Register : MonoBehaviour {
             if (!hasLowerChar.IsMatch(input))
             {
                 Debug.LogWarning("Password should contain at least one lower case letter");
+                errorMessage.text = "Password should contain at least one lower case letter";
                 return false;
             }
             else if (!hasUpperChar.IsMatch(input))
             {
                 Debug.LogWarning("Password should contain at least one upper case letter");
+                errorMessage.text = "Password should contain at least one upper case letter";
                 return false;
             }
             else if (!hasMiniMaxChars.IsMatch(input))
             {
                 Debug.LogWarning("Password should not be less than 8 or greater than 15 characters");
+                errorMessage.text = "Password should not be less than 8 or greater than 15 characters";
                 return false;
             }
             else if (!hasNumber.IsMatch(input))
             {
                 Debug.LogWarning("Password should contain at least one numerical value");
+                errorMessage.text = "Password should contain at least one numerical value";
                 return false;
             }
 
             else if (!hasSymbols.IsMatch(input))
             {
                 Debug.LogWarning("Password should contain at least one special case characters");
+                errorMessage.text = "Password should contain at least one special case characters";
                 return false;
             }
             else
