@@ -1,4 +1,0 @@
-C:\Users\Ryan\Desktop\testGit\AR-Collaboration\c#-server\csharp-server\csharp-server\bin\Debug\netcoreapp3.0\csharp-server.exe
-C:\Users\Ryan\Desktop\testGit\AR-Collaboration\c#-server\csharp-server\csharp-server\obj\Debug\netcoreapp3.0\csharp-server.csprojAssemblyReference.cache
-C:\Users\Ryan\Desktop\testGit\AR-Collaboration\c#-server\csharp-server\csharp-server\obj\Debug\netcoreapp3.0\csharp-server.AssemblyInfoInputs.cache
-C:\Users\Ryan\Desktop\testGit\AR-Collaboration\c#-server\csharp-server\csharp-server\obj\Debug\netcoreapp3.0\csharp-server.AssemblyInfo.cs
