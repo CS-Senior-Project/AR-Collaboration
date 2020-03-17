@@ -18,7 +18,6 @@ public class CallKeyboard : MonoBehaviour
 
     // For Notes
     public Keyboard keyboard;
-    GameObject txtToSpawn;
 
     void Start()
     {
@@ -29,40 +28,15 @@ public class CallKeyboard : MonoBehaviour
 
     public void TriggerUp_keyboardCall(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
-        Debug.Log("Trigger is up");
+        Debug.Log("Trigger is up - from CallKeyboard");
     }
     public void TriggerDown_keyboardCall(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
-        Debug.Log("Trigger is down");
-
-        GameObject hand = GameObject.Find("Right Hand");
-        Transform handTransform = hand.GetComponent<Transform>();
-
-        txtToSpawn = new GameObject("User Text");
-        txtToSpawn.AddComponent<TextMesh>().text = "";
-
-        txtToSpawn.transform.position = handTransform.position + new Vector3(-0.5f, 0.0f, 0.0f);     // Place on the controller
-
-        txtToSpawn.GetComponent<TextMesh>().characterSize = 0.1f;
-        txtToSpawn.GetComponent<TextMesh>().fontSize = 10;
-        Color textColor = new Color(0f, 122f, 204f);
-        txtToSpawn.GetComponent<TextMesh>().color = textColor;
-
+        Debug.Log("Trigger is down - from CallKeyboard");
 
         Debug.Log("Enabling Keyboard");
         keyboard.Enable();
 
-        Debug.Log("Updating Text");
-        GameObject textHolder = GameObject.Find("TextHolder");
-        txtToSpawn.GetComponent<TextMesh>().text = textHolder.GetComponent<TextMesh>().text;
-
-
-
-    
     }
 
-    void Update()
-    {
-
-    }
 }

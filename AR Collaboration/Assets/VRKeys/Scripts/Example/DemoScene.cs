@@ -57,7 +57,7 @@ namespace VRKeys {
 			canvas.worldCamera = cam;
 
 			keyboard.Enable ();
-			keyboard.SetPlaceholderMessage ("Please enter your email address");
+			keyboard.SetPlaceholderMessage ("Tap keys to begin typing...");
 
 			keyboard.OnUpdate.AddListener (HandleUpdate);
 			keyboard.OnSubmit.AddListener (HandleSubmit);

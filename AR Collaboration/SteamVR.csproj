@@ -256,10 +256,10 @@
     <None Include="Assets\SteamVR\SteamVR.asmdef" />
     <None Include="Assets\SteamVR\InteractionSystem\Samples\Squishy\SquishyDeform.shader" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Ryan/Desktop/capstone_master/AR-Collaboration/AR Collaboration/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Ryan/Desktop/capstone_master/AR-Collaboration/AR Collaboration/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -451,7 +451,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>C:/Users/Ryan/Desktop/capstone_master/AR-Collaboration/AR Collaboration/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
