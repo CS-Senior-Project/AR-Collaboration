@@ -4,32 +4,51 @@ using System.Collections;
 using System;
 using System.Text.RegularExpressions;
 
-public class Login : MonoBehaviour {
-	public GameObject username;
-	public GameObject password;
-	private string Username;
-	private string Password;
-	private String[] Lines;
-	private string DecryptedPass;
+public class Login : MonoBehaviour
+{
+    public GameObject username;
+    public GameObject password;
+    private string Username;
+    private string Password;
+    private String[] Lines;
+    private string DecryptedPass;
 
-	public void LoginButton(){
-		bool UN = false;
-		bool PW = false;
+    private Text errorMessage;
+    private Text successMessage;
 
-		if (Username != ""){
-			if(System.IO.File.Exists(@"E:/UnityTestFolder/"+Username+".txt")){
-				UN = true;
-				Lines = System.IO.File.ReadAllLines(@"E:/UnityTestFolder/"+Username+".txt");
-			} else {
-				Debug.LogWarning("Username Invaild");
-			}
-		} else {
-			Debug.LogWarning("Username Field Empty");
-		}
+    public void LoginButton()
+    {
+
+        errorMessage = GameObject.Find("ErrorMessage").GetComponent<Text>();
+        successMessage = GameObject.Find("SuccessMessage").GetComponent<Text>();
+
+        bool UN = false;
+        bool PW = false;
+
+        if (Username != "")
+        {
+            if (System.IO.File.Exists(@"E:/UnityTestFolder/" + Username + ".txt"))
+            {
+                UN = true;
+                Lines = System.IO.File.ReadAllLines(@"E:/UnityTestFolder/" + Username + ".txt");
+            }
+            else
+            {
+                Debug.LogWarning("Username Invaild");
+                errorMessage.text = "Username Invalid";
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Username Field Empty");
+            errorMessage.text = "Username Field Empty";
+        }
 
 
-		if (Password != ""){
-			if (System.IO.File.Exists(@"E:/UnityTestFolder/"+Username+".txt")){
+        if (Password != "")
+        {
+            if (System.IO.File.Exists(@"E:/UnityTestFolder/" + Username + ".txt"))
+            {
 
                 // Get Salt
                 string salt = Lines[1];
@@ -45,37 +64,55 @@ public class Login : MonoBehaviour {
                 // Get Hash
                 string fileHash = Lines[2];
 
-                if (fileHash == Comparehash){
-					PW = true;
-				} else {
-					Debug.LogWarning("Password Is invalid");
-				}
-			} else {
-				Debug.LogWarning("Password Is invalid");
-			}
-		} else {
-			Debug.LogWarning("Password Field Empty");
-		}
-		if (UN == true&&PW == true){
-			username.GetComponent<InputField>().text = "";
-			password.GetComponent<InputField>().text = "";	
-			print ("Login Sucessful");
-			Application.LoadLevel("Input2.0");          // Change to Whatever Start Scene is
-		}
-	}
-	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown(KeyCode.Tab)){
-			if (username.GetComponent<InputField>().isFocused){
-				password.GetComponent<InputField>().Select();           // Allow for tab to next slot
-			}
-		}
-		if (Input.GetKeyDown(KeyCode.Return)){
-			if (Password != "" && Password != ""){
-				LoginButton();                                          // "Enter will press button
-			}
-		}
-		Username = username.GetComponent<InputField>().text;
-		Password = password.GetComponent<InputField>().text;	
-	}
+                if (fileHash == Comparehash)
+                {
+                    PW = true;
+                }
+                else
+                {
+                    Debug.LogWarning("Password Is invalid");
+                    errorMessage.text = "Password Is invalid";
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Password Is invalid");
+                errorMessage.text = "Password Is invalid";
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Password Field Empty");
+            errorMessage.text = "Password Field Empty";
+        }
+        if (UN == true && PW == true)
+        {
+            username.GetComponent<InputField>().text = "";
+            password.GetComponent<InputField>().text = "";
+            print("Login Successful");
+            errorMessage.text = "";
+            successMessage.text = "Login Successful";
+            Application.LoadLevel("Input2.0");                          // TODO: Change to Whatever Start Scene is
+        }
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (username.GetComponent<InputField>().isFocused)
+            {
+                password.GetComponent<InputField>().Select();           // Allow for tab to next slot
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (Password != "" && Password != "")
+            {
+                LoginButton();                                          // "Enter will press button
+            }
+        }
+        Username = username.GetComponent<InputField>().text;
+        Password = password.GetComponent<InputField>().text;
+    }
 }
