@@ -76,9 +76,11 @@
     <Compile Include="Assets\Client\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\CallKeyboard.cs" />
     <Compile Include="Assets\Scripts\ControllerInput.cs" />
+    <Compile Include="Assets\Scripts\Login.cs" />
     <Compile Include="Assets\Scripts\MyActionScript.cs" />
     <Compile Include="Assets\Scripts\OurKeyboard.cs" />
     <Compile Include="Assets\Scripts\PlaceText.cs" />
+    <Compile Include="Assets\Scripts\Register.cs" />
     <Compile Include="Assets\VRKeys\Scripts\BackspaceKey.cs" />
     <Compile Include="Assets\VRKeys\Scripts\CancelKey.cs" />
     <Compile Include="Assets\VRKeys\Scripts\ClearKey.cs" />
