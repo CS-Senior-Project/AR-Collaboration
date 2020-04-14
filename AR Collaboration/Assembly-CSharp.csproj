@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_2_17;UNITY_2019_2;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;ZED_STEAM_VR;ZED_SVR_2_0_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_2_17;UNITY_2019_2;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;ZED_STEAM_VR;ZED_SVR_2_0_INPUT;ZED_OPENCV_FOR_UNITY;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -74,6 +74,77 @@
     <Compile Include="Assets\Client\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Client\Scripts\ThreadManager.cs" />
     <Compile Include="Assets\Client\Scripts\UIManager.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\AlphaBlendingExample\AlphaBlendingExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\ComicFilterExample\ComicFilter.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\ComicFilterExample\ComicFilterExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\GreenScreenExample\GreenScreenExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\HandPoseEstimationExample\ColorBlobDetector.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\HandPoseEstimationExample\HandPoseEstimationExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\MatToTextureInRenderThreadExample\MatToTextureInRenderThreadExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\MultiObjectTrackingBasedOnColorExample\ColorObject.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\MultiObjectTrackingBasedOnColorExample\MultiObjectTrackingBasedOnColorExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\PolygonFilterExample\PolygonFilterExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Basic\MatBasicProcessingExample\MatBasicProcessingExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Basic\Texture2DToMatExample\Texture2DToMatExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Basic\Utils_GetFilePathExample\Utils_GetFilePathExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Basic\WebCamTextureToMatExample\WebCamTextureToMatExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\Basic\WebCamTextureToMatHelperExample\WebCamTextureToMatHelperExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\aruco\ArUcoExample\ArUcoCameraCalibrationExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\aruco\ArUcoExample\ArUcoCreateMarkerExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\aruco\ArUcoExample\ArUcoExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\aruco\ArUcoExample\ArUcoWebCamTextureExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\aruco\ArUcoExample\CameraParameters.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\face\FaceMarkExample\FaceMarkExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\face\FaceRecognizerExample\FaceRecognizerExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\plot\PlotExample\PlotExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\text\TextExample\TextDetectionExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\text\TextExample\TextRecognitionExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ContribModules\tracking\TrackingExample\TrackingExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\FpsMonitor.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\calib3d\StereoBMExample\StereoBMExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\core\PCAExample\PCAExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\dnn\DnnObjectDetectionExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\dnn\DnnObjectDetectionWebCamTextureExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\dnn\FastNeuralStyleTransferExample\FastNeuralStyleTransferExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\dnn\MaskRCNNExample\MaskRCNNExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\dnn\OpenPoseExample\OpenPoseExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\dnn\TensorflowInceptionExample\TensorflowInceptionWebCamTextureExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\features2d\Feature2DExample\Feature2DExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\features2d\MSERExample\MSERExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\features2d\SimpleBlobExample\SimpleBlobExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgcodecs\ImwriteScreenCaptureExample\ImwriteScreenCaptureExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\CircleDetectionExample\CircleDetectionExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\ConnectedComponentsExample\ConnectedComponentsExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\ConvexHullExample\ConvexHullExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\DrawingExample\DrawingExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\GrabCutExample\GrabCutExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\HoughLinesPExample\HoughLinesPExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\MatchShapesExample\MatchShapesExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\MatchTemplateExample\MatchTemplateExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\ThresholdExample\ThresholdExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\imgproc\WrapPerspectiveExample\WrapPerspectiveExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\ml\SVMExample\SVMExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\objdetect\FaceDetectionExample\AsynchronousFaceDetectionWebCamTextureExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\objdetect\FaceDetectionExample\FaceDetectionExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\objdetect\FaceDetectionExample\FaceDetectionWebCamTextureExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\objdetect\HOGDescriptorExample\HOGDescriptorExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\objdetect\QRCodeDetectorExample\QRCodeDetectorExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\objdetect\QRCodeDetectorExample\QRCodeDetectorWebCamTextureExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\photo\InpaintExample\InpaintExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\photo\SeamlessCloneExample\SeamlessCloneExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\video\BackgroundSubtractorMOG2Example\BackgroundSubtractorMOG2Example.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\video\CamShiftExample\CamShiftExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\video\KalmanFilterExample\KalmanFilterExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\video\OpticalFlowExample\OpticalFlowExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\videoio\VideoCaptureExample\VideoCaptureExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\MainModules\videoio\VideoWriterExample\VideoWriterExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\OpenCVForUnityExample.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ShowLicense.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\ShowSystemInfo.cs" />
+    <Compile Include="Assets\OpenCVForUnity\Examples\TouchController.cs" />
+    <Compile Include="Assets\OpenCVForUnity\org\opencv\unity\ARUtils.cs" />
+    <Compile Include="Assets\OpenCVForUnity\org\opencv\unity\helper\ImageOptimizationHelper.cs" />
+    <Compile Include="Assets\OpenCVForUnity\org\opencv\unity\helper\WebCamTextureToMatHelper.cs" />
     <Compile Include="Assets\Scripts\CallKeyboard.cs" />
     <Compile Include="Assets\Scripts\ControllerInput.cs" />
     <Compile Include="Assets\Scripts\Login.cs" />
@@ -219,9 +290,11 @@
     <None Include="Assets\ZED\Examples\Plane Detection\Textures\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\haarcascade_frontalface_alt.xml" />
     <None Include="Assets\ZED\Examples\OpenCV ArUco Detection\Shaders\UnlitTrans.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Deferred_Lighting.shader" />
     <None Include="Assets\ZED\Examples\Dark Room\ReadMe.txt" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\lbpcascade_frontalface.xml" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Post-Processing.shader" />
     <None Include="Assets\ZED\Examples\Mixed Reality Calibration\README.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\GUI\ZED_Default_OverlayNoZTest.shader" />
@@ -234,6 +307,7 @@
     <None Include="Assets\ZED\Examples\GreenScreen\Shaders\GreenScreen.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Forward_Lighting.shader" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Resources\Shaders\AlphaBlendTransition.shader" />
+    <None Include="Assets\OpenCVForUnity\Plugins\macOS\opencvforunity.bundle\Contents\Resources\gl3w\readme.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Deferred.shader" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Resources\explosion\Particle_Softrim_Dissolve_alpha.shader" />
@@ -245,6 +319,7 @@
     <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Blit.shader" />
     <None Include="Assets\ZED\Examples\Mixed Reality Calibration\Shaders\UnlitDarkenable.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\Postprocess_blend.shader" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\text\trained_classifier_erGrouping.xml" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Resources\Muzzleflash_FX\WFX_S Particle Add A8.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Lighting.cginc" />
     <None Include="Assets\ZED\Examples\Planetarium\Resources\Orbits\Materials\RingShader.shader" />
@@ -258,10 +333,13 @@
     <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\WireframeVideoOverlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_ComposeMask.shader" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\text\OCRHMM_transitions_table.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\ZED\Examples\Plane Detection\Models\Readme.txt" />
     <None Include="Assets\ZED\SDK\Shaders\ZED_Unlit_BGRA.shader" />
     <None Include="Assets\ZED\Examples\Planetarium\Resources\Earth\Shaders\Earth.shader" />
+    <None Include="Assets\OpenCVForUnity\Examples\link.xml" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\text\trained_classifierNM1.xml" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\ZED\Examples\GreenScreen\Shaders\ComputeGreenScreen.shader" />
     <None Include="Assets\ZED\Examples\Plane Detection\Readme.txt" />
@@ -270,8 +348,10 @@
     <None Include="Assets\ZED\Examples\GreenScreen\Shaders\YUV.shader" />
     <None Include="Assets\ZED\Examples\Movie Screen\Readme.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Surface_PostProcessing.shader" />
+    <None Include="Assets\OpenCVForUnity\OpenCVLicense.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_StencilToMask.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\OpenCVForUnity\StreamingAssets\text\trained_classifierNM2.xml" />
     <None Include="Assets\ZED\Examples\Planetarium\Resources\Sun\Shader\Sun.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
@@ -291,6 +371,7 @@
     <None Include="Assets\ZED\Examples\Drone Shooter\Readme.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\PlaneDetection\GeometryWirePlane.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\OpenCVForUnity\Notices.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -497,6 +578,9 @@
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
       <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCVForUnityCSharpDLL">
+      <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Assets/OpenCVForUnity/org/OpenCVForUnityCSharpDLL.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
