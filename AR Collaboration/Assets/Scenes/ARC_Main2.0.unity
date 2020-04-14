@@ -1202,7 +1202,7 @@ GameObject:
   - component: {fileID: 1023389898}
   - component: {fileID: 1023389897}
   m_Layer: 0
-  m_Name: Marker 2 (Blue)
+  m_Name: Marker 2 (Blue-RaspberryPi4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1668,7 +1668,7 @@ GameObject:
   - component: {fileID: 1833598053}
   - component: {fileID: 1833598052}
   m_Layer: 0
-  m_Name: Marker 0 (Red)
+  m_Name: Marker 0 (Red-BeagleboardXM)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1911,7 +1911,7 @@ GameObject:
   - component: {fileID: 1936468460}
   - component: {fileID: 1936468459}
   m_Layer: 0
-  m_Name: Marker 1 (Green)
+  m_Name: Marker 1 (Green-BeagleboardBlack)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
