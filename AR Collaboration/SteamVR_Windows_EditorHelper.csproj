@@ -266,11 +266,11 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="OpenCVForUnityCSharpDLL">
       <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Assets/OpenCVForUnity/org/OpenCVForUnityCSharpDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/Carson/Documents/GitHub/AR-Collaboration/AR Collaboration/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
