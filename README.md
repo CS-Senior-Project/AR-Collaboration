@@ -2,12 +2,20 @@
 CS13: AR collaboration for PCB analysis with VR and Zed Mini
 Team Members: Carson Pemble, Ryan Miura, Haozhe Li
 
+Required equipment:
+HTC/Oculus or any SteamVR supported vr headset equipment
+Zed Mini Stereo camera
+printed ArUco marker iamges
+a PCB board to work with
+
 
 Set Up Instructions:
 1. Clone repo
 2. Connect Hardware
 3. Set up Unity (2019.2.17f1)
 4. Load LoginScene and Run
+
+
 
 
 
