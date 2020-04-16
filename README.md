@@ -2,6 +2,7 @@
 CS13: AR collaboration for PCB analysis with VR and Zed Mini
 Team Members: Carson Pemble, Ryan Miura, Haozhe Li
 
+
 Required equipment:
 HTC/Oculus or any SteamVR supported vr headset equipment
 Zed Mini Stereo camera
