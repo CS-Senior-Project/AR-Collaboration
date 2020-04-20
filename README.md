@@ -16,8 +16,12 @@ Team Members: Carson Pemble, Ryan Miura, Haozhe Li
 2. Download [ZEDSDK].
 3. Download and Set up [Unity] (2019.2.17f1).
 4. Download [ZEDUnity] plugin and import into Unity.
-4. Connect HTC Vive and ZED Mini Hardware to the machine (usb 3.0).
-5. Load LoginScene and Run
+5. Download and install [Steam] (for SteamVR).
+6. Download and run [SteamVR].
+7. Set up HTC [Vive] and base stations.
+8. Attach the ZED Mini to Vive and then connect the [combined] hardware to the machine (usb 3.0).
+9. Open the AR Collaboration project in Unity.
+10. Select LoginScene (Project -> Assets -> Scenes -> LoginScene) and press Play.
 
 
 ### Troubleshooting:
@@ -48,3 +52,7 @@ Thank you for looking into our project.
 [ZEDSDK]: <https://www.stereolabs.com/developers/release/>
 [ZEDUnity]: <https://github.com/stereolabs/zed-unity/releases/>
 [Unity]: <https://unity3d.com/get-unity/download>
+[Steam]: <https://store.steampowered.com/about/>
+[SteamVR]: <https://store.steampowered.com/app/250820/SteamVR/>
+[Vive]: <https://www.vive.com/us/setup/>
+[combined]: <https://www.stereolabs.com/zed-mini/setup/vive/>
