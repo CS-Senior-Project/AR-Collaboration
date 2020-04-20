@@ -63,7 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AudioComponentDelete.cs" />
+    <Compile Include="Assets\Scripts\AudioComponent.cs" />
+    <Compile Include="Assets\Scripts\AudioTest.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Client.cs" />
     <Compile Include="Assets\Scripts\ClientHandle.cs" />

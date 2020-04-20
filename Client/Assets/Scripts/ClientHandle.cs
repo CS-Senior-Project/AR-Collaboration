@@ -63,11 +63,12 @@ public class ClientHandle : MonoBehaviour
         {
             if (objects[i].GetComponent<PlayerManager>().id == _id)
             {
+                Debug.Log("Playing audio");
                 AudioSource audioSource = objects[i].GetComponent<AudioSource>();
                 audioSource.clip = AudioClip.Create($"player{_id}_audio", 44100 * 2, 1, 44100, false);
                 audioSource.clip.SetData(_samples, 0);
                 audioSource.Play();
-                audioSource.clip = null;
+                //audioSource.clip = null;
             }
         }
     }

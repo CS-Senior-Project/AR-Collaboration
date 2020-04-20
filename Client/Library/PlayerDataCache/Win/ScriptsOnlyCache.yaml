@@ -58,39 +58,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11118}
+      Script: {instanceID: 11154}
     - Class: 114
-      Script: {instanceID: 11274}
+      Script: {instanceID: 11296}
     - Class: 114
-      Script: {instanceID: 11318}
+      Script: {instanceID: 11314}
     - Class: 114
-      Script: {instanceID: 11704}
+      Script: {instanceID: 11358}
     - Class: 114
-      Script: {instanceID: 12062}
+      Script: {instanceID: 11664}
     - Class: 114
-      Script: {instanceID: 12262}
+      Script: {instanceID: 11666}
     - Class: 114
-      Script: {instanceID: 12544}
+      Script: {instanceID: 11750}
     - Class: 114
-      Script: {instanceID: 12894}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12908}
+      Script: {instanceID: 12268}
     - Class: 114
-      Script: {instanceID: 15768}
+      Script: {instanceID: 12310}
     - Class: 114
-      Script: {instanceID: 15772}
+      Script: {instanceID: 12444}
     - Class: 114
-      Script: {instanceID: 16182}
+      Script: {instanceID: 12598}
     - Class: 114
-      Script: {instanceID: 18984}
+      Script: {instanceID: 12746}
     - Class: 114
-      Script: {instanceID: 18988}
+      Script: {instanceID: 12826}
     - Class: 114
-      Script: {instanceID: 18992}
+      Script: {instanceID: 12864}
     - Class: 114
-      Script: {instanceID: 18996}
+      Script: {instanceID: 12954}
     - Class: 114
-      Script: {instanceID: 20748}
+      Script: {instanceID: 12968}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -124,6 +124,12 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClientSend
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -152,6 +158,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 19ce4d990b36c942bc272650aa89dc85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerManager
   - hash:
       serializedVersion: 2
       Hash: 72712369a7c681ad84fc255a5ec0b333
@@ -268,6 +280,18 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: 2f0cbf8ba8f4af6bde4362b49ca058d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ThreadManager
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -358,6 +382,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -406,10 +436,28 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 559de2a12c7b99467c3fe090708f5a2a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClientHandle
+  - hash:
+      serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioTest
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -442,6 +490,18 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 86a4c4a60253e8c173479e8f7fa608c6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: a393e1d85ad3d56e5c48c9a58cc2d806
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Client
+  - hash:
+      serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -452,6 +512,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioComponentDelete
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -542,66 +608,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: a393e1d85ad3d56e5c48c9a58cc2d806
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Client
-  - hash:
-      serializedVersion: 2
-      Hash: 2f0cbf8ba8f4af6bde4362b49ca058d0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UIManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ClientHandle
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ThreadManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ClientSend
-  - hash:
-      serializedVersion: 2
-      Hash: 559de2a12c7b99467c3fe090708f5a2a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraController
-  - hash:
-      serializedVersion: 2
-      Hash: 86a4c4a60253e8c173479e8f7fa608c6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 19ce4d990b36c942bc272650aa89dc85
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AudioComponentDelete
   platform: 5
   scenePathNames:
   - Assets/Scenes/Main.unity

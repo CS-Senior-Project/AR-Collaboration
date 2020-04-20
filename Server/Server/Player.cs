@@ -58,6 +58,11 @@ namespace Server
             }
         }
 
+        public void SetAudio(float[] _samples)
+        {
+            samples = _samples;
+        }
+
         private void Move(Vector2 _inputDirection)
         {
             Vector3 _forward = Vector3.Transform(new Vector3(0, 0, 1), rotation);
@@ -76,9 +81,5 @@ namespace Server
             rotation = _rotation;
         }
 
-        public void SetAudio(float[] _samples)
-        {
-            samples = _samples;
-        }
     }
 }
