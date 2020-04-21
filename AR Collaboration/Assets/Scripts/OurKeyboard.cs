@@ -6,6 +6,10 @@
  *
  * Email:   info@campfireunion.com
  * Website: https://www.campfireunion.com
+ * 
+ * Files created by the OSU ARC Senior Project Team
+ * April 20, 2020
+ * 
  */
 
 using UnityEngine;

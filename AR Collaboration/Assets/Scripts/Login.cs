@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/**
+ * 
+ * Files created by the OSU ARC Senior Project Team
+ * April 20, 2020
+ * 
+ */
+
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System;
