@@ -18,10 +18,15 @@ Team Members: Carson Pemble, Ryan Miura, Haozhe Li
 4. Download [ZEDUnity] plugin and import into Unity.
 5. Download and install [Steam] (for SteamVR).
 6. Download and run [SteamVR].
-7. Set up HTC [Vive] and base stations.
-8. Attach the ZED Mini to Vive and then connect the [combined] hardware to the machine (usb 3.0).
-9. Open the AR Collaboration project in Unity.
-10. Select LoginScene (Project -> Assets -> Scenes -> LoginScene) and press Play.
+7. Download and install [Visual Studio 2019].
+8. Open Server.sln file in Visual Studio.
+9. Start the Server using the Run button at the top of the window labeled Server.
+10. Set up HTC [Vive] and base stations.
+11. Attach the ZED Mini to Vive and then connect the [combined] hardware to the machine (usb 3.0).
+12. Open the AR Collaboration project in Unity.
+13. Select LoginScene (Project -> Assets -> Scenes -> LoginScene) and press Play.
+14a. To view audio, build and run the project (File -> Build And Run).
+14b. Select Main Scene (Project -> Assets -> Client -> Scenes -> Main) and press Play. 
 
 
 ### Troubleshooting:
