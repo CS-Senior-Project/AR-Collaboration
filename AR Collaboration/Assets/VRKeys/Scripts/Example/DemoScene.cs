@@ -8,6 +8,7 @@
  * Website: https://www.campfireunion.com
  * 
  * Editted by the OSU ARC Senior Project Team
+ * Carson Pemble
  * April 20, 2020
  * 
  */
@@ -129,7 +130,7 @@ namespace VRKeys {
 
 		}
 
-/*		public void HandleCancel () {                                       
+		public void HandleCancel () {                                       
 			Debug.Log ("Cancelled keyboard input!");
 		}
 
@@ -155,6 +156,6 @@ namespace VRKeys {
 				return false;
 			}
 			return true;
-		}*/
+		}
 	}
 }

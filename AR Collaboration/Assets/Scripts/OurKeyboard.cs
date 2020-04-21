@@ -7,7 +7,8 @@
  * Email:   info@campfireunion.com
  * Website: https://www.campfireunion.com
  * 
- * Files created by the OSU ARC Senior Project Team
+ * File editted by the OSU ARC Senior Project Team
+ * Carson Pemble
  * April 20, 2020
  * 
  */
@@ -45,11 +46,11 @@ namespace VRKeys
             canvas.worldCamera = cam;
 
             keyboard.Enable();
-            keyboard.SetPlaceholderMessage("Make a note");
+            //keyboard.SetPlaceholderMessage("Make a note");
 
-            keyboard.OnUpdate.AddListener(HandleUpdate);
-            keyboard.OnSubmit.AddListener(HandleSubmit);
-            keyboard.OnCancel.AddListener(HandleCancel);
+            keyboard.OnUpdate.AddListener(HandleUpdate);        //
+            keyboard.OnSubmit.AddListener(HandleSubmit);        // Set up Listeners
+            keyboard.OnCancel.AddListener(HandleCancel);        //
         }
 
         private void OnDisable()
@@ -68,7 +69,7 @@ namespace VRKeys
         /// </summary>
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))            // Space still works to disable the keyboard
             {
                 if (keyboard.disabled)
                 {
@@ -117,13 +118,11 @@ namespace VRKeys
             newtext.text = text;
             keyboard.SetText("");
 
-
-
         }
 
         public void HandleCancel()
         {
-            Debug.Log("Cancelled keyboard input!");
+            Debug.Log("Cancelled keyboard input!");         // For debugging purposes
         }
     }
 }

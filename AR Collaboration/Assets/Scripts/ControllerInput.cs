@@ -1,6 +1,7 @@
 ﻿/**
  * 
  * Files created by the OSU ARC Senior Project Team
+ * Carson Pemble
  * April 20, 2020
  * 
  */
@@ -13,6 +14,5 @@ public class ControllerInput : MonoBehaviour
 {
     public bool triggerButtonDown = false;
     private Valve.VR.EVRButtonId triggerButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
-
 
 }
