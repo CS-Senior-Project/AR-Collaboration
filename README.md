@@ -26,7 +26,7 @@ Team Members: Carson Pemble, Ryan Miura, Haozhe Li
 12. Open the AR Collaboration project in Unity.
 13. Select LoginScene (Project -> Assets -> Scenes -> LoginScene) and press Play.
 14a. To view audio, build and run the project (File -> Build And Run).
-14b. Select Main Scene (Project -> Assets -> Client -> Scenes -> Main) and press Play. 
+14b. Select Main Scene (Project -> Assets -> Client -> Scenes -> Main) and press Play.
 
 
 ### Troubleshooting:
