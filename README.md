@@ -61,3 +61,4 @@ Thank you for looking into our project.
 [SteamVR]: <https://store.steampowered.com/app/250820/SteamVR/>
 [Vive]: <https://www.vive.com/us/setup/>
 [combined]: <https://www.stereolabs.com/zed-mini/setup/vive/>
+[Visual Studio 2019]: <https://visualstudio.microsoft.com/vs/>
