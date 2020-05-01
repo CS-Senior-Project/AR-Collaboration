@@ -1045,6 +1045,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe05b3f306bbb345977fa565051438e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Trigger:
+    actionPath: /actions/arc_actionset/in/trigger
+    needsReinit: 0
+  handType: 2
 --- !u!1 &994801446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2122,3 +2126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe05b3f306bbb345977fa565051438e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Trigger:
+    actionPath: /actions/arc_actionset/in/trigger
+    needsReinit: 0
+  handType: 1
