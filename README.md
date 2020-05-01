@@ -2,6 +2,15 @@
 CS13: AR collaboration for PCB analysis with VR and Zed Mini
 Team Members: Carson Pemble, Ryan Miura, Haozhe Li
 
+### Project Description:
+The ARC project is to create an augmented reality (AR) Printed Circuit Board (PCB) collaboration software application. With a 3D stereo camera attached to the front of an HTC Vive VR headset, we will create our own AR headset. Our project will allow the user to simulate a first-person interaction with a PCB board in augmented reality for other viewers to see and interact with. The camera will be set at the correct interpupillary distance to mimic what the main user (broadcaster) is seeing, and the camera feed will be transmitted by our software to display the same environment in real-time to the other users (viewers) who will be viewing the displayed feed on their own headsets. The other viewing users will be able to annotate and interact in the same AR environment so the broadcaster can see their annotations as well.
+
+The purpose of this project is to help our client improve his PCB design through the use of a virtual reality collaboration suite. Our goal is to create software that will allow for our client and his colleagues to present information about various parts of a printed circuit board or any other technologies in a 3D virtual reality video conversation. With the addition of augmented reality annotations, near real-time audio, and laser pointers this new form of communication should allow for further advancements in our clients research and improve long distance project collaboration.
+
+
+### Unity Version:
+***Unity 2019.2.17f1***
+
 
 ### Required Equipment:
 * VR Capable Computer
@@ -46,6 +55,13 @@ AR Image Marker isn't tracking correctly?
 Virtual AR Image plane isn't the correct size?
 > Currently Marker 0 (ArUco Marker ID 0) is set to the correct size for a Beagleboard XM. Marker 1 is set to a Beagleboard Black, and 
 > Marker 2 is set to a Raspberry Pi 4. If you want to assign an image to a new board, you can adjust the size of the corresponding cube > in each Marker object. To add a new board select the “Marker 3” object and then select the “Cube” child object of  “Marker 3”. You can > then adjust the “Transform” and “Box Collider” components to fit the correct size and placement of your board.
+
+
+### Official Deadlines
+- [X] Alpha Build
+- [X] Beta Build
+- [ ] Code Freeze
+- [ ] Virtual Expo
 
 
 Thank you for looking into our project.
