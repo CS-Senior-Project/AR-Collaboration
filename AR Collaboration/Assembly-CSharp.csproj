@@ -153,6 +153,7 @@
     <Compile Include="Assets\Scripts\mycollision.cs" />
     <Compile Include="Assets\Scripts\OurKeyboard.cs" />
     <Compile Include="Assets\Scripts\PlaceText.cs" />
+    <Compile Include="Assets\Scripts\raycasting.cs" />
     <Compile Include="Assets\Scripts\Register.cs" />
     <Compile Include="Assets\VRKeys\Scripts\BackspaceKey.cs" />
     <Compile Include="Assets\VRKeys\Scripts\CancelKey.cs" />
