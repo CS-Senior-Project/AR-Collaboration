@@ -1,6 +1,7 @@
 # AR-Collaboration
-CS13: AR collaboration for PCB analysis with VR and Zed Mini
-Team Members: Carson Pemble, Ryan Miura, Haozhe Li
+CS13: AR collaboration for PCB analysis with VR and Zed Mini\
+Team Members: Carson Pemble, Ryan Miura, Haozhe Li\
+[Project Showcase]
 
 ### Project Description:
 The ARC project is to create an augmented reality (AR) Printed Circuit Board (PCB) collaboration software application. With a 3D stereo camera attached to the front of an HTC Vive VR headset, we will create our own AR headset. Our project will allow the user to simulate a first-person interaction with a PCB board in augmented reality for other viewers to see and interact with. The camera will be set at the correct interpupillary distance to mimic what the main user (broadcaster) is seeing, and the camera feed will be transmitted by our software to display the same environment in real-time to the other users (viewers) who will be viewing the displayed feed on their own headsets. The other viewing users will be able to annotate and interact in the same AR environment so the broadcaster can see their annotations as well.
@@ -78,3 +79,4 @@ Thank you for looking into our project.
 [Vive]: <https://www.vive.com/us/setup/>
 [combined]: <https://www.stereolabs.com/zed-mini/setup/vive/>
 [Visual Studio 2019]: <https://visualstudio.microsoft.com/vs/>
+[Project Showcase]: <https://eecs.oregonstate.edu/project-showcase/projects/?id=WBlPhALnPto9V4HS/>
