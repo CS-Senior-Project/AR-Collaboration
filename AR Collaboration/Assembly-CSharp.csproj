@@ -74,6 +74,7 @@
     <Compile Include="Assets\Client\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Client\Scripts\ThreadManager.cs" />
     <Compile Include="Assets\Client\Scripts\UIManager.cs" />
+    <Compile Include="Assets\facecamera.cs" />
     <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\AlphaBlendingExample\AlphaBlendingExample.cs" />
     <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\ComicFilterExample\ComicFilter.cs" />
     <Compile Include="Assets\OpenCVForUnity\Examples\Advanced\ComicFilterExample\ComicFilterExample.cs" />
@@ -145,6 +146,7 @@
     <Compile Include="Assets\OpenCVForUnity\org\opencv\unity\ARUtils.cs" />
     <Compile Include="Assets\OpenCVForUnity\org\opencv\unity\helper\ImageOptimizationHelper.cs" />
     <Compile Include="Assets\OpenCVForUnity\org\opencv\unity\helper\WebCamTextureToMatHelper.cs" />
+    <Compile Include="Assets\readkeyboard.cs" />
     <Compile Include="Assets\Scripts\CallKeyboard.cs" />
     <Compile Include="Assets\Scripts\collidercheck.cs" />
     <Compile Include="Assets\Scripts\ControllerInput.cs" />
