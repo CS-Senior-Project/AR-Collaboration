@@ -11,6 +11,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System;
 using System.Text.RegularExpressions;
+using System.IO;
 
 public class Register : MonoBehaviour
 {
@@ -36,9 +37,37 @@ public class Register : MonoBehaviour
         bool PW = false;
         bool CPW = false;
 
+
+
+        string path = Directory.GetCurrentDirectory();
+        //Debug.LogWarning("Current Path = " + path);
+
+        string fullpath = path + "\\Users";
+        Debug.LogWarning("Current Fullpath = " + fullpath);
+
+        try
+        {
+            // Determine whether the directory exists.
+            if (Directory.Exists(fullpath))
+            {
+                Debug.LogWarning("Directory already exists");
+            }
+
+            // Try to create the directory.
+            DirectoryInfo di = Directory.CreateDirectory(fullpath);
+            Debug.LogWarning("The directory was created successfully at: " + Directory.GetCreationTime(fullpath));
+
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning("The process failed: " + e.ToString());
+        }
+
+
+
         if (Username != "")                                                                 // There has to be some input.
         {
-            if (!System.IO.File.Exists(@"E:/UnityTestFolder/" + Username + ".txt"))
+            if (!File.Exists(fullpath + "/" + Username + ".txt"))
             {
                 UN = true;                                                                  // Set true if the username is NOT already in the file.
             }
@@ -97,7 +126,7 @@ public class Register : MonoBehaviour
 
 
             form = (Username + Environment.NewLine + salt + Environment.NewLine + hash);        // Add the information to a form
-            System.IO.File.WriteAllText(@"E:/UnityTestFolder/" + Username + ".txt", form);      // Print all the information to a file corresponding to the username
+            File.WriteAllText(fullpath + "/" + Username + ".txt", form);      // Print all the information to a file corresponding to the username
             username.GetComponent<InputField>().text = "";
             password.GetComponent<InputField>().text = "";
             confPassword.GetComponent<InputField>().text = "";

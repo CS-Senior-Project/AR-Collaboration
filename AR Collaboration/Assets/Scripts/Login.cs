@@ -11,6 +11,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System;
 using System.Text.RegularExpressions;
+using System.IO;
 
 public class Login : MonoBehaviour
 {
@@ -33,12 +34,30 @@ public class Login : MonoBehaviour
         bool UN = false;                                                                // Set bool to false to start out.
         bool PW = false;
 
-        if (Username != "")
+
+
+
+        string fullpath = Directory.GetCurrentDirectory() + "\\Users";
+        //Debug.LogWarning("Current Path = " + fullpath);
+
+        // The directory should already exist
+        if (Directory.Exists(fullpath))
         {
-            if (System.IO.File.Exists(@"E:/UnityTestFolder/" + Username + ".txt"))
+            Debug.LogWarning("Directory already exists");
+        } else
+        {
+            Debug.LogWarning("Directory: " + fullpath + " doesn't exist!");
+        }
+
+
+
+
+            if (Username != "")
+        {
+            if (File.Exists(fullpath + "/" + Username + ".txt"))
             {
                 UN = true;                                                              // Set true if the username is already in the file.
-                Lines = System.IO.File.ReadAllLines(@"E:/UnityTestFolder/" + Username + ".txt");
+                Lines = File.ReadAllLines(fullpath + "/" + Username + ".txt");
             }
             else
             {
@@ -55,7 +74,7 @@ public class Login : MonoBehaviour
 
         if (Password != "")
         {
-            if (System.IO.File.Exists(@"E:/UnityTestFolder/" + Username + ".txt"))
+            if (File.Exists(fullpath + "/" + Username + ".txt"))
             {
 
                 // Get Salt
