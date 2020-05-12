@@ -2,7 +2,11 @@
  * 
  * Files created by the OSU ARC Senior Project Team
  * Carson Pemble
- * April 20, 2020
+ * May 12, 2020
+ * 
+ * This is called from within the Login scene when the user presses the Login button
+ * It creates a relative directory, and stores the user credentials if they pass the requirements,
+ * if not then the user will see the errorMessage appear on the screen.
  * 
  */
 

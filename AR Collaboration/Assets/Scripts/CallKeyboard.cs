@@ -4,6 +4,10 @@
  * Carson Pemble
  * April 20, 2020
  * 
+ * This is a simple function based off of MyActionScript
+ * and all it does is call the keyboard when the user presses the 
+ * corresponding button as what has been assigned to the mapping.
+ * 
  */
 
 using System.Collections;
@@ -13,9 +17,6 @@ using Valve.VR;
 using VRKeys;
 using UnityEngine.SceneManagement;
 
-
-// This Script is the basics for how to get controller input! 
-// Right now it is used to Make a gold sphere
 
 public class CallKeyboard : MonoBehaviour
 {

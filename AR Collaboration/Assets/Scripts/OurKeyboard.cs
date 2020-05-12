@@ -9,7 +9,10 @@
  * 
  * File editted by the OSU ARC Senior Project Team
  * Carson Pemble
- * April 20, 2020
+ * May 12, 2020
+ * 
+ * This was a file from the VRKeys asset that we have copied into our own 
+ * project and adjusted it to the needs of our own personal project.
  * 
  */
 
