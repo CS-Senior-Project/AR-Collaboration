@@ -2,7 +2,11 @@
  * 
  * Files created by the OSU ARC Senior Project Team
  * Carson Pemble
- * April 20, 2020
+ * May 12, 2020
+ * 
+ * This Script is the template for how to get controller input!
+ * Right now it is used to Make a gold sphere 
+ * (Not used within the project, just to help the understanding of how to use the controller input)
  * 
  */
 
@@ -11,9 +15,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
-
-// This Script is the template for how to get controller input! 
-// Right now it is used to Make a gold sphere
 
 public class MyActionScript : MonoBehaviour
 {

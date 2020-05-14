@@ -2,7 +2,10 @@
  * 
  * Files created by the OSU ARC Senior Project Team
  * Carson Pemble
- * April 20, 2020
+ * May 12, 2020
+ * 
+ * This file is for handling the users input when they are placing 
+ * the previously written text (using VRKeys) in the virtual space.
  * 
  */
 
