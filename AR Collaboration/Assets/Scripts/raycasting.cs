@@ -11,14 +11,20 @@ public class raycasting : MonoBehaviour
     public SteamVR_Action_Boolean Trigger;
     //reference of the input type
     public SteamVR_Input_Sources handType;
+    //the mark object that indicate the cross point
     public GameObject mark;
+    //The raycast object
     private RaycastHit hit;
+    //The point that being hitted
     private Vector3 hit_point;
+    //The keyboard reference
     public VRKeys.Keyboard keyboard;
+    //The Prefab of 3d text to be created
     public GameObject textholder;
+    //The null vector to distinguish two hands.
     private Vector3 none;
-    // Update is called once per frame
 
+    // called when script being enabled, link method to keyborad's callback listener
     private void OnEnable()
     {
         keyboard.SetPlaceholderMessage("Tap keys to begin typing...");
@@ -29,7 +35,7 @@ public class raycasting : MonoBehaviour
         none =new Vector3 (0, 0, 0);
     }
 
-
+    //called when script being disbaled , unlink method to keyborad's callback listener
     private void OnDisable()
     {
         keyboard.OnUpdate.RemoveListener(HandleUpdate);
@@ -43,7 +49,8 @@ public class raycasting : MonoBehaviour
     {
 
     }
-
+    
+    //called when 'enter' key on the VRkeyboard being hitten, simply create new 3d text object with fixed postion and input string
     private void HandleSubmit(string text)
     {
         if (hit_point != none)
@@ -51,6 +58,7 @@ public class raycasting : MonoBehaviour
             Debug.Log("submit:" + text);
             GameObject temp = Instantiate(textholder, hit.transform);
             temp.transform.position = hit_point;
+            temp.transform.parent = hit.collider.transform;
             if (temp == null)
             {
                 Debug.Log("create texthold failed");
@@ -66,6 +74,8 @@ public class raycasting : MonoBehaviour
         Debug.Log("update:" + text);
     }
 
+
+    //keep listening the raycasting result of the laser point, show the indicater object mark when cross with 'Cube',trigger to bring out the VRkey when crossing with one of the 'Cube's.
     void Update()
     {
         // the hit object which store the information of hitten object
@@ -79,11 +89,10 @@ public class raycasting : MonoBehaviour
             {
 
                 //Debug.Log("hit object:" + hit.collider.gameObject.name + "xyz:" + hit.point);
-                //create a sphere object as the child object of object been hitten("Cube")
                 mark.SetActive(true);
                 mark.transform.position = hit.point;
                 //  }
-                if (Input.GetKeyDown(KeyCode.Tab)&& keyboard.disabled)
+                if (GetTrigger() && keyboard.disabled)
                 {
                     hit_point = hit.point;
                     if(handType== SteamVR_Input_Sources.RightHand)
