@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+Defines packet handler functions used when incoming packets are received from the server.
+Welcome handler creates connection between client and server.
+SpawnPlayer handler spawns player in from test code. PlayerPosition and PlayerRotation are the same.
+OtherPlayerAudio receives audio from server sent by other players, then plays it from correct source object.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Net;

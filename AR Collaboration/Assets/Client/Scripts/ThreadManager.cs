@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+From test code, but used with project code.
+Handles threads and ensures updates are made continuously.
+*/
+
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 

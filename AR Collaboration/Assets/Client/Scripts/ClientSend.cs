@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+Handles sending packets to the server.
+Defines base send functions for both TCP/UDP.
+WelcomeReceived is used to create the connection between client and server.
+PlayerMovement sends player movement values from testing code.
+PlayerAudio sends most recent audio clip captured from microphone to all other connected players.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

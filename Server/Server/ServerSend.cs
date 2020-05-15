@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+Handles sending packets from the server to clients.
+Defines functions for sending packets to single players, all players, and all players except one using TCP/UDP.
+Welcome is used to create connection between server and client.
+SpawnPlayer, PlayerPosition, and PlayerRotation are test code, used to update player position values in scene.
+Audio is used to send a player's audio to all other connected clients.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 

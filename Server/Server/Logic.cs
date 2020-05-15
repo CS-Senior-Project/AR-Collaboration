@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+Handles ensuring server updates are continuous.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 

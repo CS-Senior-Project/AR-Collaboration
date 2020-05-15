@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+Handles thread updates, nearly same as client-side.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+Client class used for networking audio.
+Handles defining TCP/UDP classes to send over those protocols.
+Also initializes packet types with int id and handler function.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Net;
@@ -32,7 +38,7 @@ public class Client : MonoBehaviour
 
     private void Start() {
         tcp = new TCP();
-        udp = new UDP();
+        udp = new UDP(); //udp not necessary for networking, provides another protocol to use
     }
 
     public void ConnectToServer() {

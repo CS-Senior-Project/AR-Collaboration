@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+Handles client information (ID, username, current position).
+SendIntoGame sends packet to client instructing client to spawn player object into scene.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Net;

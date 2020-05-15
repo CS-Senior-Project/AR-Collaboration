@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+Gives identifying attributes to the player objects.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
