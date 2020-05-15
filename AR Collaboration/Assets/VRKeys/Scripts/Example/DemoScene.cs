@@ -6,6 +6,14 @@
  *
  * Email:   info@campfireunion.com
  * Website: https://www.campfireunion.com
+ * 
+ * Editted by the OSU ARC Senior Project Team
+ * Carson Pemble
+ * May 12, 2020
+ * 
+ * This was a file from the VRKeys asset that we have copied into our own 
+ * project and adjusted it to the needs of our own personal project.
+ * 
  */
 
 using UnityEngine;
@@ -57,7 +65,7 @@ namespace VRKeys {
 			canvas.worldCamera = cam;
 
 			keyboard.Enable ();
-			keyboard.SetPlaceholderMessage ("Tap keys to begin typing...");
+			//keyboard.SetPlaceholderMessage ("Tap keys to begin typing...");
 
 			keyboard.OnUpdate.AddListener (HandleUpdate);
 			keyboard.OnSubmit.AddListener (HandleSubmit);
@@ -125,14 +133,14 @@ namespace VRKeys {
 
 		}
 
-		public void HandleCancel () {
+		public void HandleCancel () {                                       
 			Debug.Log ("Cancelled keyboard input!");
 		}
 
 		/// <summary>
 		/// Pretend to submit the email before resetting.
 		/// </summary>
-		private IEnumerator SubmitEmail (string email) {
+		private IEnumerator SubmitEmail (string email) {                                    // Save in case Kevin wants to handle Email verification
 			keyboard.ShowInfoMessage ("Sending lots of spam, please wait... ;)");
 
 			yield return new WaitForSeconds (2f);

@@ -1,11 +1,20 @@
-﻿using System.Collections;
+﻿/**
+ * 
+ * Files created by the OSU ARC Senior Project Team
+ * Carson Pemble
+ * May 12, 2020
+ * 
+ * This Script is the template for how to get controller input!
+ * Right now it is used to Make a gold sphere 
+ * (Not used within the project, just to help the understanding of how to use the controller input)
+ * 
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
-
-// This Script is the basics for how to get controller input! 
-// Right now it is used to Make a gold sphere
 
 public class MyActionScript : MonoBehaviour
 {
@@ -26,12 +35,12 @@ public class MyActionScript : MonoBehaviour
     public void TriggerUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
         Debug.Log("Trigger is up");
-        Sphere.GetComponent<MeshRenderer>().enabled = false;
+        Sphere.GetComponent<MeshRenderer>().enabled = false;            // Leave the sphere meshless
     }
     public void TriggerDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
         Debug.Log("Trigger is down");
-        Sphere.GetComponent<MeshRenderer>().enabled = true;
+        Sphere.GetComponent<MeshRenderer>().enabled = true;            // Make the sphere gold
     }
 
     void Update()
