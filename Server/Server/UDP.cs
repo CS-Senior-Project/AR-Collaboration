@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+Defines functionality for sending UDP packets. Nearly same as client-side.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Net;

@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Testing class used for testing networking. 
+Controls camera movement from player object in scene.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

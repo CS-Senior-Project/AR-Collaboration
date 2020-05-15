@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Same packet class from client code.
+Found from test code, used in project code.
+Handles creating packets with different IDs and from different data types.
+Used in sending TCP/UDP packets.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Numerics;

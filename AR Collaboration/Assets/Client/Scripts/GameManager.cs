@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+GameManager manages spawning players into scene, from test code.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+Controls sending player information.
+FixedUpdate runs on ticks, will continue sending data to the server.
+SendInputToServer sends player movement values to server, from test code.
+SendAudioToServer grabs latest audio clip and sends it to the server every 1 second.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;

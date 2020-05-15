@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+Packet class provides functionality for putting different data types into packets to be sent.
+From test code, but used within project code.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;

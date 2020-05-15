@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿/*
+Handles username input field in test scene.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

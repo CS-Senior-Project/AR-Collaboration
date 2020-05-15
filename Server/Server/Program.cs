@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+Starts server with max number of players on correct port. 
+Also starts main thread and ensures server continuously updates.
+*/
+
+using System;
 using System.Threading;
 
 namespace Server

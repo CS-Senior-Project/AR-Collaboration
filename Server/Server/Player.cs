@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Handles current player information.
+Move and SetInputs are from test code, used to handle player position in scene.
+SetAudio sets player's audio samples to the samples received from client packet.
+Update runs continuously, will send player audio every 1 second.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Numerics;

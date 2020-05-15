@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Handles incoming packets from client.
+WelcomeReceived is used to connect server to client.
+PlayerMovement is test code, handles receiving updates on player movement values from client.
+PlayerAudio receives new player audio from client, updating the player's audio samples.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Numerics;

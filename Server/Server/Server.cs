@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Handles much of the server logic.
+Defines MaxPlayers and Port to host server on.
+Defines packet types that can be received along with respective handlers.
+Starts TCP client and begins accepting connection requests.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Net;
