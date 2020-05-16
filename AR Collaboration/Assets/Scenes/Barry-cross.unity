@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 10920650}
   - component: {fileID: 10920649}
   m_Layer: 0
-  m_Name: Rigth Sphere
+  m_Name: Right Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 1489248826}
   - component: {fileID: 1489248825}
   m_Layer: 0
-  m_Name: mark (1)
+  m_Name: LH Collision Mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1686,7 +1686,7 @@ Transform:
   m_GameObject: {fileID: 1489248824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.629481, y: -0.71161175, z: 7.3779593}
-  m_LocalScale: {x: 0.16017, y: 0.16017, z: 0.037559867}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
@@ -1867,8 +1867,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614497389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5008588, y: -15, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 0.1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
@@ -2189,7 +2189,7 @@ GameObject:
   - component: {fileID: 1985226836}
   - component: {fileID: 1985226835}
   m_Layer: 0
-  m_Name: mark
+  m_Name: RH Collision Mark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2263,7 +2263,7 @@ Transform:
   m_GameObject: {fileID: 1985226834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.629481, y: -0.71161175, z: 7.3779593}
-  m_LocalScale: {x: 0.16017, y: 0.16017, z: 0.037559867}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
