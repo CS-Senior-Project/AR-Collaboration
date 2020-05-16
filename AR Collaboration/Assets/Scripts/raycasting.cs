@@ -24,6 +24,8 @@ public class raycasting : MonoBehaviour
     //The null vector to distinguish two hands.
     private Vector3 none;
 
+    private Transform parent;
+
     // called when script being enabled, link method to keyborad's callback listener
     private void OnEnable()
     {
@@ -56,10 +58,9 @@ public class raycasting : MonoBehaviour
         if (hit_point != none)
         {
             Debug.Log("submit:" + text);
-            GameObject temp = Instantiate(textholder, hit.transform);
+            GameObject temp = Instantiate(textholder, parent);
             temp.transform.position = hit_point;
-            temp.transform.parent = hit.collider.transform;
-            if (temp == null)
+                if (temp == null)
             {
                 Debug.Log("create texthold failed");
             }
@@ -83,17 +84,16 @@ public class raycasting : MonoBehaviour
         //The Raycast will return true with start position vector and diretion vector. iff the collide object is "Cube"
         if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity,1<<2))
         {
-            //handle the handler trigger input 
-            //  if (GetTrigger()) { 
             if (hit.collider.gameObject.name == "Cube")
             {
 
                 //Debug.Log("hit object:" + hit.collider.gameObject.name + "xyz:" + hit.point);
                 mark.SetActive(true);
                 mark.transform.position = hit.point;
-                //  }
-                if (GetTrigger() && keyboard.disabled)
+                //Input.GetKeyDown(KeyCode.Tab) || if (GetTrigger()
+                if (Input.GetKeyDown(KeyCode.Tab)&& keyboard.disabled)
                 {
+                    parent = hit.transform;
                     hit_point = hit.point;
                     if(handType== SteamVR_Input_Sources.RightHand)
                     {
