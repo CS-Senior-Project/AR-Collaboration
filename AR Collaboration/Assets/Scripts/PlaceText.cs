@@ -46,16 +46,18 @@ public class PlaceText : MonoBehaviour {
         txtToSpawn = new GameObject("User Text");                       // Create a new game object to hold the text
         txtToSpawn.AddComponent<TextMesh>().text = "";
 
-        txtToSpawn.transform.position = handTransform.position + new Vector3(0f, 0.0f, 0.0f);     // Place on the controller
+        txtToSpawn.transform.position = handTransform.position + new Vector3(0f, 0.0f, 0.0f);     // Place on the controll
 
         txtToSpawn.GetComponent<TextMesh>().characterSize = 0.1f;           //
-        txtToSpawn.GetComponent<TextMesh>().fontSize = 10;                  // Settings that seem to give the best results
+        txtToSpawn.GetComponent<TextMesh>().fontSize = 15;                  // Settings that seem to give the best results
         Color textColor = new Color(0f, 122f, 204f);                        //
         txtToSpawn.GetComponent<TextMesh>().color = textColor;
+        txtToSpawn.GetComponent<MeshRenderer>().enabled = false;
 
         Debug.Log("Updating Text");
         GameObject textHolder = GameObject.Find("TextHolder");
         txtToSpawn.GetComponent<TextMesh>().text = textHolder.GetComponent<TextMesh>().text;    // Add text to the newly created game object
+        txtToSpawn.GetComponent<MeshRenderer>().enabled = true;
 
     }
 

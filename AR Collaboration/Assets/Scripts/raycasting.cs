@@ -64,6 +64,7 @@ public class raycasting : MonoBehaviour
             {
                 Debug.Log("create texthold failed");
             }
+            temp.transform.Rotate(0.0f, 180.0f, 0.0f, Space.Self);
             temp.GetComponent<TextMesh>().text = text;
             //create object and asign text
             keyboard.Disable();
@@ -90,8 +91,8 @@ public class raycasting : MonoBehaviour
                 //Debug.Log("hit object:" + hit.collider.gameObject.name + "xyz:" + hit.point);
                 mark.SetActive(true);
                 mark.transform.position = hit.point;
-                //Input.GetKeyDown(KeyCode.Tab) || if (GetTrigger()
-                if (Input.GetKeyDown(KeyCode.Tab)&& keyboard.disabled)
+
+                if ((Input.GetKeyDown(KeyCode.Tab) || GetTrigger()) && keyboard.disabled)
                 {
                     parent = hit.transform;
                     hit_point = hit.point;
