@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 1545
     height: 463
-  m_MinSize: {x: 104, y: 122}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 344}
   m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 1356
+  controlID: 63
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,10 +95,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1308
-  m_MinSize: {x: 681, y: 616}
-  m_MaxSize: {x: 14002, y: 18066}
+  m_MinSize: {x: 683, y: 616}
+  m_MaxSize: {x: 14004, y: 18066}
   vertical: 0
-  controlID: 1353
+  controlID: 13
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,8 +145,8 @@ MonoBehaviour:
     y: 0
     width: 556
     height: 924
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 616}
   m_MaxSize: {x: 10002, y: 18066}
   vertical: 1
-  controlID: 1354
+  controlID: 61
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 344}
   m_MaxSize: {x: 8006, y: 8044}
   vertical: 0
-  controlID: 1355
+  controlID: 62
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -512,20 +512,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Carson\Documents\GitHub\AR-Collaboration\AR Collaboration
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 105}
-    m_SelectedIDs: e83e0000
-    m_LastClickedID: 16104
-    m_ExpandedIDs: 000000003c32000066320000f23400005836000098370000ee3a0000543d0000103e00006040000000ca9a3b
+    m_SelectedIDs: bc340000
+    m_LastClickedID: 13500
+    m_ExpandedIDs: 000000002e32000058320000e43400004a3600008a370000e03a0000463d0000023e00005240000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -553,7 +553,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003c32000066320000f23400005836000098370000ee3a0000543d0000103e000060400000
+    m_ExpandedIDs: 000000002e32000058320000e43400004a3600008a370000e03a0000463d0000023e000052400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,9 +676,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 043a0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 527affffc885ffff20d9ffffc0efffff74fbffff64470000e84700002c5400005a540000
+      m_ExpandedIDs: 76fbffff1847000074470000b2470000ce470000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

@@ -67,6 +67,14 @@ public class raycasting : MonoBehaviour
             temp.transform.Rotate(0.0f, 180.0f, 0.0f, Space.Self);
             temp.GetComponent<TextMesh>().text = text;
             //create object and asign text
+
+            Debug.Log("Updating Text");
+            GameObject textHolder = GameObject.Find("TextHolder");
+            textHolder.GetComponent<TextMesh>().text = text;    // Add text to the newly created game object
+            textHolder.GetComponent<MeshRenderer>().enabled = true;
+
+            keyboard.text = "";
+
             keyboard.Disable();
         }
     }
