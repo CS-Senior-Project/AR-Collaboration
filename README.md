@@ -61,8 +61,8 @@ Virtual AR Image plane isn't the correct size?
 ### Official Deadlines
 - [X] Alpha Build
 - [X] Beta Build
-- [ ] Code Freeze
-- [ ] Virtual Expo
+- [X] Code Freeze
+- [X] Virtual Expo
 
 
 Thank you for looking into our project.
